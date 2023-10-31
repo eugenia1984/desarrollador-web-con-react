@@ -4,7 +4,7 @@ Curso de React con Argentina Programa.
 
 [Aca -https://eugenia1984.github.io/desarrollador-web-con-react/-](https://eugenia1984.github.io/desarrollador-web-con-react/) podrán encontrar mis **prácticas**:
 
-1. [**Formulario**](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/formulario) con HTML5, CSS3, y JavaScript
+1. **Formulario** con HTML5, CSS3, y JavaScript: [codigo](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/formulario)  y [deploy](https://eugenia1984.github.io/desarrollador-web-con-react/formulario/)
 
 ---
 
