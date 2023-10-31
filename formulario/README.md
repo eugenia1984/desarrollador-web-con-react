@@ -39,3 +39,21 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 ● Premium: $1500
 
 ---
+
+## Así quedo el formulario:
+
+![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/58461eb9-8a6d-4c7e-a0fc-48451f486973)
+
+- Se realizan validaciones en datos ingresados:
+
+![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/209d0c65-7630-4e7f-bf61-c6ab77b70d5c)
+
+- Una vez que el formulario se envio correctamente se informa
+
+![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/ccbb3212-515a-4726-9a54-4948bb97ebce)
+
+- Se implementaron etiquetas semanticas y buenas prácticas:
+
+![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/de74ee11-a647-420f-8328-b3fe061bf39c)
+
+
