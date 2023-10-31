@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap');
+
+/************  RESET  **********/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-light: #f0f0f0;
+  --bg-dark: #2a043a;
+  --white: #fff;
+  --gray-light: #ccc;
+  --gray-dark: #555;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --error: rgb(215, 7, 7);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-light);
+}
+
+h1 {
+  padding: 0.75rem;
+}
+
+h2 {
+  padding: 0.25rem 0.5rem 0.5rem;
+}
+
+/******* PERSONALIZABLES *****/
+.txt-center {
+  text-align: center;
+}
+
+/********  HEADER  ***********/
+header {
+  padding: 1.5rem 1rem;
+  background-color: var(--bg-dark);
+  color: var( --white);
+}
+
+/********  MAIN  ***********/
+main {
+  min-height: 90vh;
+  padding: 2rem 1rem;
+  background: rgba(2, 2, 2);
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.practicas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-card {
+    width: 200px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-card a {
+    text-decoration: none;
+    color: white; 
+    padding: 18px 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/********  FOOTER  ***********/
+footer {
+  padding: 1.5rem 1rem;
+  background-color: var(--bg-dark);
+  color: var( --white);
+}
+
+footer a {
+  color: var( --white);
+  text-decoration: none;
+  font-weight: 600;
+}
