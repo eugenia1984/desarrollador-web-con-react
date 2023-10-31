@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <title>Solicitud de Seguro</title>
+</head>
+
+<body>
+  <header>
+    <h1>Solicitud de Seguro</h1>
+  </header>
+  <main>
+    <form id="insuranceForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z\s]{2,}" placeholder="Ingresa tu nombre">
+      <p id="nombreError" class="error-message"></p>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required pattern="[A-Za-z\s]{2,}"
+        placeholder="Ingresa tu apellido">
+      <p id="apellidoError" class="error-message"></p>
+
+      <label for="dni">DNI:</label>
+      <input type="text" id="dni" name="dni" required pattern="[0-9]+" placeholder="Sin puntos. Ejemplo: 1111111">
+      <p id="dniError" class="error-message"></p>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}"
+        placeholder="Ingresa tu email. Ejemplo: tuemail@email.com">
+      <p id="emailError" class="error-message"></p>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required pattern="[0-9]+"
+        placeholder="Ingresa el telefono (solo numeros)">
+      <p id="telefonoError" class="error-message"></p>
+
+      <label for="tipoSeguro">Tipo de Seguro:</label>
+      <select id="tipoSeguro" name="tipoSeguro">
+        <option value="basico">Básico</option>
+        <option value="intermedio">Intermedio</option>
+        <option value="premium">Premium</option>
+      </select>
+
+      <div id="valorSeguro">Valor del seguro:</div>
+
+      <button type="submit">Solicitar Contacto</button>
+    </form>
+    <div id="popup" class="popup">
+      <p>Formulario enviado correctamente.</p>
+      <p>Dentro de las 24 horas le estaremos respondiendo.</p>
+    </div>
+  </main>
+  <footer>
+    <p>Práctica realizada por <a href="https://www.linkedin.com/in/maria-eugenia-costa/" target="_blank">Maria Eugenia
+        Costa</a></p>
+  </footer>
+</body>
+
+</html>
