@@ -54,4 +54,23 @@ Desarrollador una calculadora que tenga:
 
 Al realizar la cuenta se deberá actualizar el campo resultado
 
+## Así quedó:
+
+![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/9bc3607f-39fd-4e19-af58-583e83786021)
+
+- Valida que no se puede dividir por cero:
+
+  ![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/08ceafae-d2f3-4102-9aeb-298e3329a691)
+
+
+- Valida que solo se ingresen números:
+
+  ![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/36e8449e-23b4-44a4-8eac-e15ab5218cf3)
+
+- Muestra el resultado obtenido:
+
+  ![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/92b9af1f-408a-41dc-b549-ae06a346d2b0)
+
+- Si se hace click en RESET se vuelve al estado incial, sin ningún dato ingresado ni operación seleccionada.
+
 ---
