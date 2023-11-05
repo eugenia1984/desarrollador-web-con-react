@@ -42,11 +42,13 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 
 ## Así quedo el formulario:
 
-![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/58461eb9-8a6d-4c7e-a0fc-48451f486973)
+![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/d9dc014f-f949-4402-b727-c61cf6a92ad4)
+
 
 - Se realizan validaciones en datos ingresados:
 
-![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/209d0c65-7630-4e7f-bf61-c6ab77b70d5c)
+![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/0b8868be-cd7b-4490-9e27-1424db710390)
+
 
 - Una vez que el formulario se envio correctamente se informa
 
