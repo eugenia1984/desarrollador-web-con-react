@@ -4,7 +4,7 @@ Curso de React con Argentina Programa.
 
 En [**https://eugenia1984.github.io/desarrollador-web-con-react/**](https://eugenia1984.github.io/desarrollador-web-con-react/) podrán encontrar mis **prácticas**:
 
-<img width="40" height="40" src="https://img.icons8.com/arcade/40/1.png" alt="1"/> **Formulario** con HTML5, CSS3, y JavaScrip, les dejo los links del [cádigo](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/formulario)  y para ver el [deploy](https://eugenia1984.github.io/desarrollador-web-con-react/formulario/)
+<img width="40" height="40" src="https://img.icons8.com/arcade/40/1.png" alt="1"/> **Formulario** con HTML5, CSS3, y JavaScrip, les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/formulario)  y para ver el [deploy](https://eugenia1984.github.io/desarrollador-web-con-react/formulario/)
 
 <img width="40" height="40" src="https://img.icons8.com/arcade/40/2.png" alt="2"/> **Calculadora** básica para poder sumar, restar, multiplicar o dividir, con HTML5, CSS3 y JavaScript, les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/calculadora) y para ver el [deploy](https://eugenia1984.github.io/desarrollador-web-con-react/calculadora)
 
