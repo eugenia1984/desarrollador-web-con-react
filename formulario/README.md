@@ -1,8 +1,8 @@
-# Clase 1 - Ejercitación
+# <img width="40" height="40" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/40/external-class-online-education-flaticons-lineal-color-flat-icons-3.png" alt="external class online"/> Clase 1 - Ejercitación
 
-## Repaso HTML - CSS
+## Repaso <img width="30" height="30" src="https://img.icons8.com/color/30/html-5.png" alt="html5"/> HTML y <img width="30" height="30" src="https://img.icons8.com/color/30/css3.png" alt="css3"/> CSS
 
-### Consigna
+### <img width="30" height="30" src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/30/external-note-pad-user-interface-flatart-icons-flat-flatarticons.png" alt="note pad"/> Consigna
 
 Seguro No Pagamos Cooperativa es una compañía de seguros que lleva 2 años en el mercado.
 

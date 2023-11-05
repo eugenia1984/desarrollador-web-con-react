@@ -62,6 +62,7 @@ main {
   align-content: center;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 
 .glass-card {

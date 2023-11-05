@@ -43,11 +43,22 @@ footer a {
   color: var(--white);
   font-weight: 700;
 }
+
 /*********** MAIN ***********/
 main {
   min-height: 90vh;
+  max-width: 600px;
+  margin: 60px auto;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+p {
+  text-align: center;
+}
 form {
   max-width: 400px;
   margin: 3rem auto 5rem;
