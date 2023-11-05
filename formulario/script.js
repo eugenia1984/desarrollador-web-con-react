@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const { nombre, apellido, dni, telefono, email, tipoSeguro } = form
 
   // Expresiones regulares para validar datos ingresados
-  const eMailRegExp = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/
+  const eMailRegExp =
+    /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/
   const namesRegExp = /^[A-Za-z\s]{2,}$/
   const onlyNumbersRegExp = /^[0-9]+$/
 
@@ -41,8 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     updateInsuranceValue()
   })
 
-    // Al hacer el submit dle formulario si esta ok se envia por email
-    // y se muestra el pop up
+  // Al hacer el submit del formulario si esta ok se envia por email y se muestra el pop up
   form.addEventListener('submit', function (event) {
     event.preventDefault()
 
@@ -73,19 +73,39 @@ document.addEventListener('DOMContentLoaded', function () {
     isValid =
       isValid && validateInput(telefono, onlyNumbersRegExp, phoneErrorMsg)
     isValid = isValid && validateInput(email, eMailRegExp, eMailErrorMsg)
+    // tengo que validar que se selecciono un seguro
+    const selectedInsurance = tipoSeguro.value
+
+    if (selectedInsurance === '') {
+      isValid = false
+      const errorParagraph = document.getElementById('tipoSeguroError2')
+      errorParagraph.textContent = 'X - Debe elegir un tipo de seguro'
+    } else {
+      document.getElementById('tipoSeguroError2').textContent = ''
+    }
     return isValid
   }
 
   function validateInput(inputElement, regex, errorMessage) {
-    if (!regex.test(inputElement.value)) {
+    const selectedInsurance = tipoSeguro.value
+
+    if (!regex.test(inputElement.value) && selectedInsurance === '') {
       inputElement.classList.add('error')
       const errorParagraph = document.getElementById(`${inputElement.id}Error`)
       errorParagraph.textContent = `X - ${errorMessage}`
+
+      const errorParagraph2 = document.getElementById('tipoSeguroError2')
+      errorParagraph2.textContent = 'X - Debe elegir un tipo de seguro'
+
       return false
     } else {
       inputElement.classList.remove('error')
       const errorParagraph = document.getElementById(`${inputElement.id}Error`)
       errorParagraph.textContent = ''
+
+      const errorParagraph2 = document.getElementById('tipoSeguroError2')
+      errorParagraph2.textContent = ''
+
       return true
     }
   }
@@ -116,19 +136,25 @@ document.addEventListener('DOMContentLoaded', function () {
   function updateInsuranceValue() {
     const valorSeguro = document.getElementById('valorSeguro')
     const selectedOption = tipoSeguro.options[tipoSeguro.selectedIndex].value
+    const errorParagraph2 = document.getElementById('tipoSeguroError2')
 
     switch (selectedOption) {
       case 'basico':
         valorSeguro.textContent = 'Valor del seguro: $500'
+        errorParagraph2.textContent = ''
         break
       case 'intermedio':
         valorSeguro.textContent = 'Valor del seguro: $1000'
+        errorParagraph2.textContent = ''
         break
       case 'premium':
         valorSeguro.textContent = 'Valor del seguro: $1500'
+        errorParagraph2.textContent = ''
         break
       default:
-        valorSeguro.textContent = 'Valor del seguro:'
+        valorSeguro.textContent = 'Debe elegir un valor de seguro'
+        errorParagraph2.textContent = ''
+        
     }
   }
 })

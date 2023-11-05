@@ -43,13 +43,14 @@
 
       <label for="tipoSeguro">Tipo de Seguro:</label>
       <select id="tipoSeguro" name="tipoSeguro">
+        <option value="">-- Elije un valor --</option>
         <option value="basico">Básico</option>
         <option value="intermedio">Intermedio</option>
         <option value="premium">Premium</option>
       </select>
 
-      <div id="valorSeguro">Valor del seguro:</div>
-
+      <div id="valorSeguro"></div>
+      <p id="tipoSeguroError2" class="error-message"></p>
       <button type="submit">Solicitar Contacto</button>
     </form>
     <div id="popup" class="popup">
