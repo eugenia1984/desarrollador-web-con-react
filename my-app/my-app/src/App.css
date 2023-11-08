@@ -1,0 +1,40 @@
+:root {
+  --grey-50: #fafafa;
+  --lime-500: #cddc39;
+}
+
+*, 
+*::after,
+ *::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/***** HEADER *****/
+header {
+  padding: 1rem 0.25rem;
+}
+
+/***** FOOTER *****/
+footer a {
+  text-decoration: none;
+  color: var(--grey-50);
+  font-weight: 900;
+}
+
+footer a:hover {
+  color: var(--lime-500);
+} 
+
+/***** MAIN ****/
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 0.25rem 5rem;
+  min-height: 90vh;
+}
+
+p {
+  line-height: 1.8;
+}

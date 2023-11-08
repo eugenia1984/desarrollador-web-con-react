@@ -8,6 +8,8 @@ En [**https://eugenia1984.github.io/desarrollador-web-con-react/**](https://euge
 
 <img width="40" height="40" src="https://img.icons8.com/arcade/40/2.png" alt="2"/> **Calculadora** básica para poder sumar, restar, multiplicar o dividir, con HTML5, CSS3 y JavaScript, les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/calculadora) y para ver el [deploy](https://eugenia1984.github.io/desarrollador-web-con-react/calculadora)
 
+<img width="40" height="40" src="https://img.icons8.com/arcade/40/3.png" alt="3"/> **My App** la primer práctica con React, TypeScript y Material UI, una landing de un producto, les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/my-app/my-app) y para ver el [deploy](https://oh-la-la-shoes.netlify.app/)
+
 ---
 
 ## <img width="50" height="50" src="https://img.icons8.com/office/50/monitor.png" alt="monitor"/> Tecnologías
@@ -19,6 +21,10 @@ En [**https://eugenia1984.github.io/desarrollador-web-con-react/**](https://euge
 - <img width="30" height="30" src="https://img.icons8.com/color/30/javascript--v1.png" alt="javascript"/> JavaScript
 
 - <img width="30" height="30" src="https://img.icons8.com/office/30/react.png" alt="react icon"/> React
+
+- <img width="30" height="30" src="https://img.icons8.com/color/30/typescript.png" alt="typescript"/> TypeSCript
+
+- <img width="30" height="30" src="https://img.icons8.com/color/30/material-ui.png" alt="material-ui"/> Material UI
 
 ---
 
