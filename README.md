@@ -28,6 +28,10 @@ En [**https://eugenia1984.github.io/desarrollador-web-con-react/**](https://euge
 
 ---
 
+-> En el archivo [teoria.md](https://github.com/eugenia1984/desarrollador-web-con-react/blob/main/teoria.md) pueden leer un poco de teoria de React
+
+---
+
 
 ## NOTAS:
 
