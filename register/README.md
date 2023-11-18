@@ -2,7 +2,7 @@
 
 Ejercicio de práctica con React.
 
-## Consigna;
+## Consigna:
 
 Desarrollar el registro de una página web, en el registro tener los siguientes campos:
 
@@ -18,6 +18,10 @@ Desarrollar el registro de una página web, en el registro tener los siguientes 
 - Realizar solo el maquetado utilizando react js y JSX, no se deben guardar los usuarios ni realizar lógica de validación de los mismos.
 
 -> Para hacer una práctica más completa voy a utilizar **Formik** y **YUP** para validar el formulario. Y Utilizar TypeScript.
+
+## Así quedo:
+
+![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/0e3fa9c4-7c19-473a-b04f-a51ad9be7aaa)
 
 ---
 
