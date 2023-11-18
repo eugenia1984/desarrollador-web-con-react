@@ -1,16 +1,11 @@
-import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import RegisterForm from './components/RegisterForm'
+import Layout from './components/Layout'
+import RegisterForm from './components/register-form/RegisterForm'
 
 function App() {
- 
   return (
-    <>
-      <Header />
+    <Layout>
       <RegisterForm />
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

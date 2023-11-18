@@ -1,0 +1,37 @@
+footer {
+  width: 100%;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+
+.logo {
+  height: 30px;
+  padding: 0px 4px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2rem #646cff);
+  -webkit-filter: drop-shadow(0 0 2rem #646cff);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); 
+}
+
+.footer-logo {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-logo:hover {
+  background-color: var(--cyan);
+  padding: 4px 6px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
