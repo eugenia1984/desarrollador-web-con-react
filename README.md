@@ -10,7 +10,7 @@ En [**https://eugenia1984.github.io/desarrollador-web-con-react/**](https://euge
 
 <img width="40" height="40" src="https://img.icons8.com/arcade/40/3.png" alt="3"/> **My App** la primer práctica con React, TypeScript y Material UI, una landing de un producto, les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/my-app/my-app) y para ver el [deploy](https://oh-la-la-shoes.netlify.app/)
 
-<img width="40" height="40" src="https://img.icons8.com/arcade/40/4.png" alt="4"/> Una **landing Page** que es un **formulario**.
+<img width="40" height="40" src="https://img.icons8.com/arcade/40/4.png" alt="4"/> Una **landing Page** que es un **formulario**, con React, YUP y Formik para las validaciones
 
 ---
 
