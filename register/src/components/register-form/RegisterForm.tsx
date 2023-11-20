@@ -1,14 +1,17 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import './RegisterFormStyles.css'
 import { VALIDATION_MSG } from '../../utils/validation-messages'
 import { REG_EXP_EMAIL, REG_EXP_PASS, REG_EXP_PHONE } from '../../utils/reg-exp'
 import PopUp from '../pop-up/PopUp'
+import { useSpinner } from '../../context/SpinnerProvider'
 
 const RegisterForm = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [registerMessage, setRegisterMessage] = useState<string>('')
+
+  const { addLoading, removeLoading } = useSpinner()
 
   const handleClosePopup = () => {
     setIsOpen(false)
@@ -39,32 +42,58 @@ const RegisterForm = () => {
         .matches(REG_EXP_PASS, VALIDATION_MSG.PASSWORD_FORMAT)
         .required(VALIDATION_MSG.REQUIRED),
       confirmPassword: Yup.string()
-        .oneOf([Yup.ref('password'), null], VALIDATION_MSG.PASSWORD_MATCH)
+        .oneOf([Yup.ref('password'), undefined], VALIDATION_MSG.PASSWORD_MATCH)
         .required(VALIDATION_MSG.REQUIRED),
     }),
-    onSubmit: async (values, { resetForm }) => {
-      const formData = new URLSearchParams(values)
+    onSubmit: () => { handleSubmit(formik.values)}
+  })
 
-      fetch('https://formsubmit.co/ajax/costamariaeugenia1@gmail.com', {
+  const handleSubmit = async (values: any) => {
+    try {
+      addLoading()
+
+      const response = await fetch('https://formsubmit.co/ajax/costamariaeugenia1@gmail.com', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
         },
-        body: formData.toString()
+        body: JSON.stringify(values),
       })
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.success) {
-            setRegisterMessage('Registro exitoso')
-            setIsOpen(true)
-            resetForm()
-            return
-          }
-          setRegisterMessage('Hubo un inconveniente al enviar el formulario')
-          setIsOpen(true)
-        })
-    },
-  })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setRegisterMessage('Registro exitoso')
+        setIsOpen(true)
+        formik.resetForm()
+      } else {
+        setRegisterMessage('Hubo un inconveniente al enviar el formulario')
+        setIsOpen(true)
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    } finally {
+      removeLoading()
+    }
+  }
+
+  useEffect(() => {
+    const isFormValid = formik.isValid
+    const hasTouchedFields = Object.keys(formik.touched).length > 0
+
+    if (formik.submitCount > 0 &&
+      isFormValid &&
+      hasTouchedFields &&
+      !formik.isSubmitting) {
+      handleSubmit(formik.values)
+    }
+  }, [
+    formik.submitCount,
+    formik.isValid,
+    formik.touched,
+    formik.isSubmitting,
+    formik.values
+  ])
 
   return (
     <main className=" h-100">
@@ -163,7 +192,10 @@ const RegisterForm = () => {
             { formik.errors.confirmPassword }
           </p>
         ) }
-        <button type="submit">
+        <button
+          type="submit"
+          disabled={ !formik.isValid || formik.isSubmitting }
+        >
           Registrarse
         </button>
       </form>
