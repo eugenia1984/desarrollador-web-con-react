@@ -28,13 +28,13 @@ En [**https://eugenia1984.github.io/desarrollador-web-con-react/**](https://euge
 
 - <img width="30" height="30" src="https://img.icons8.com/color/30/typescript.png" alt="typescript"/> TypeSCript
 
-- <img width="30" height="30" src="https://img.icons8.com/color/30/material-ui.png" alt="material-ui"/> Material UI
+- [<img width="30" height="30" src="https://img.icons8.com/color/30/material-ui.png" alt="material-ui"/> **Material UI**](https://mui.com/)
 
-- YUP
+- [**YUP**](https://www.npmjs.com/package/yup)
 
-- Formik
+- [**Formik**](https://formik.org/), is the world's most popular open source form library for React and React Native.
 
-- Vite
+- [**Vite**](https://vitejs.dev/), next Generation Frontend Tooling
 
 ---
 
