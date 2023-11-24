@@ -4,13 +4,13 @@ Curso de React con Argentina Programa.
 
 En [**https://eugenia1984.github.io/desarrollador-web-con-react/**](https://eugenia1984.github.io/desarrollador-web-con-react/) podrán encontrar mis **prácticas**:
 
-<img width="40" height="40" src="https://img.icons8.com/arcade/40/1.png" alt="1"/> **Formulario** con HTML5, CSS3, y JavaScrip, les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/formulario)  y para ver el [deploy](https://eugenia1984.github.io/desarrollador-web-con-react/formulario/)
+<img width="40" height="40" src="https://img.icons8.com/arcade/40/1.png" alt="1"/> **Formulario** con **HTML5**, **CSS3**, y **JavaScript**, les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/formulario)  y para ver el [deploy](https://eugenia1984.github.io/desarrollador-web-con-react/formulario/)
 
-<img width="40" height="40" src="https://img.icons8.com/arcade/40/2.png" alt="2"/> **Calculadora** básica para poder sumar, restar, multiplicar o dividir, con HTML5, CSS3 y JavaScript, les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/calculadora) y para ver el [deploy](https://eugenia1984.github.io/desarrollador-web-con-react/calculadora)
+<img width="40" height="40" src="https://img.icons8.com/arcade/40/2.png" alt="2"/> **Calculadora** básica para poder sumar, restar, multiplicar o dividir, con **HTML5**, **CSS3** y **JavaScript**, les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/calculadora) y para ver el [deploy](https://eugenia1984.github.io/desarrollador-web-con-react/calculadora)
 
 <img width="40" height="40" src="https://img.icons8.com/arcade/40/3.png" alt="3"/> **My App** la primer práctica con React, TypeScript y Material UI, una **landing de un producto**, les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/my-app/my-app) y para ver el [deploy](https://oh-la-la-shoes.netlify.app/)
 
-<img width="40" height="40" src="https://img.icons8.com/arcade/40/4.png" alt="4"/> Una **landing Page** que es un **formulario** de **registro**, con React, YUP y Formik para las validaciones, les dejo los liks del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/register) y del [deploy](https://registration-arg-programa-react.netlify.app/)
+<img width="40" height="40" src="https://img.icons8.com/arcade/40/4.png" alt="4"/> Una **landing Page** que es un **formulario** de **registro**, con **React**, **YUP** y **Formik** para las validaciones, les dejo los liks del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/register) y del [deploy](https://registration-arg-programa-react.netlify.app/)
 
 <img width="40" height="40" src="https://img.icons8.com/arcade/40/5.png" alt="5"/> Una **landing con el detalle de un producto** con nombre, descripción, precio, SKU y cantidad disponible (reutilizo la del ejercicio 3). Y ahora se agrega un **botón comprar** que al hacer click se muestra el mensaje: "Gracias por comprar", utilizando manejo de estados. Les dejo los links del [código](https://github.com/eugenia1984/desarrollador-web-con-react/tree/main/landing) y del [deploy](https://oh-la-la-shoes2.netlify.app/)
 
