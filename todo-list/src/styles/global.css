@@ -1,0 +1,22 @@
+:root {
+  --bg-dark: #191919;
+  --txt-white: #F2F2F2;
+}
+
+
+/*** Reset ***/
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--txt-white);
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
