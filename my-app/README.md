@@ -1,10 +1,12 @@
 # <img width="40" height="40" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/40/external-class-online-education-flaticons-lineal-color-flat-icons-3.png" alt="external class online"/>  Clase 3 - Ejercitación
 
-## Ejercicio
+## <img width="26" height="26" src="https://img.icons8.com/office/26/react.png" alt="react"/> React + <img width="26" height="26" src="https://img.icons8.com/fluency/26/typescript--v1.png" alt="typescript"/>  TypeScript + <img width="26" height="25" src="https://img.icons8.com/color/26/vite.png" alt="vite"/> Vite
+
+### Ejercicio
 
 Crear una aplicación con react cli llamada "myapp".
-Desarrollar el maquetado de una pagina de detalle de un producto para un sitio de
-ecommerce, se deberán visualizar los siguientes datos:
+
+Desarrollar el maquetado de una pagina de detalle de un producto para un sitio de ecommerce, se deberán visualizar los siguientes datos:
 
 ```
 ● Nombre
@@ -36,3 +38,4 @@ Mobil:
 
 ![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/f3d1ef3b-29f1-4554-98af-bf32d877a487)
 
+---
