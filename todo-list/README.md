@@ -2,26 +2,6 @@
 
 
 
-## <img width="26" height="26" src="https://img.icons8.com/office/26/command-line.png" alt="command line"/> ¿ Cómo verla en local?
-
-1. Clonate el repositorio
-
-2. Accede al directorio `todo-list`
-
-3. Instalá las dependencias:
-
-```BASH
-npm install
-```
-
-4. Correlo en modo desarrollo:
-
-```BASH
-npm run dev
-```
-
----
-
 ## <img width="26" height="26" src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/26/external-note-pad-user-interface-flatart-icons-flat-flatarticons.png" alt="note pad"/> Consigna
 
 Crear una aplicación web utilizando React que permita gestionar una lista de tareas. La aplicación deberá hacer uso de componentes funcionales, el hook useState para el manejo del estado, el hook useEffect para realizar efectos secundarios, y eventos para interactuar con el usuario.
@@ -80,6 +60,40 @@ persistan incluso después de recargar la página.
 
 ---
 
+## Tecnologías
+
+- HTML5
+
+- CSS3
+
+- TypeScript
+
+- React
+
+- React-Icons
+
+---
+
+
+## <img width="26" height="26" src="https://img.icons8.com/office/26/command-line.png" alt="command line"/> ¿ Cómo verla en local?
+
+1. Clonate el repositorio
+
+2. Accede al directorio `todo-list`
+
+3. Instalá las dependencias:
+
+```BASH
+npm install
+```
+
+4. Correlo en modo desarrollo:
+
+```BASH
+npm run dev
+```
+
+---
 ### React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
