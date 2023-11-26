@@ -1,4 +1,4 @@
-# <img src="https://img.icons8.com/nolan/32/tasklist.png" width="32" alt="to do list"/> TO-DO LIST
+# <img src="https://img.icons8.com/nolan/42/tasklist.png" width="42" alt="to do list"/> TO-DO LIST
 
 
 
@@ -6,7 +6,7 @@
 
 Crear una aplicación web utilizando React que permita gestionar una lista de tareas. La aplicación deberá hacer uso de componentes funcionales, el hook useState para el manejo del estado, el hook useEffect para realizar efectos secundarios, y eventos para interactuar con el usuario.
 
-### Requerimientos
+### <img width="28" height="28" src="https://img.icons8.com/color/28/list.png" alt="list"/> Requerimientos
 
 - Componentes Funcionales:
 
@@ -27,7 +27,7 @@ cuando esté completada).
 
 Utilizará el estado local para gestionar la entrada del usuario y enviará la nueva tarea a la lista principal.
 
-### Estado con useState:
+### <img width="28" height="28" src="https://img.icons8.com/external-justicon-flat-justicon/28/external-hook-pirates-justicon-flat-justicon.png" alt="hook"/> Estado con useState:
 
 ○ **Estado Principal (tasks)**:
 
@@ -40,7 +40,7 @@ Cada tarea debe ser un objeto con propiedades como id, nombre, y completada.
 
 - Efecto de Actualización (useEffect en el componente principal): Utilizar useEffect para realizar una acción (por ejemplo, mostrar un mensaje) cuando el estado de la lista de tareas cambie.
 
-### Interacción con el Usuario - Eventos:
+### <img width="28" height="28" src="https://img.icons8.com/cotton/28/webpage-click.png" alt="webpage-click"/> Interacción con el Usuario - Eventos:
 
 ○ **Eventos en Componente de Lista (TaskList)**: Implementar eventos que permitan al usuario interactuar con cada tarea (marcar como completada, eliminar, etc.).
 
@@ -48,7 +48,7 @@ Estos eventos deberán modificar el estado principal (tasks).
 
 ○ **Eventos en Componente de Formulario (TaskForm)**: Implementar eventos para gestionar la entrada del usuario y agregar nuevas tareas a la lista.
 
-### Estilo y Diseño:
+### <img width="28" height="28" src="https://img.icons8.com/cute-clipart/28/design.png" alt="design"/> Estilo y Diseño:
 
 Aplicar estilos CSS para mejorar la apariencia de los componentes. Puede utilizar bibliotecas como styled-components si lo desea.
 
@@ -60,17 +60,31 @@ persistan incluso después de recargar la página.
 
 ---
 
-## Tecnologías
+## Así se ve
 
-- HTML5
+### <img width="28" height="28" src="https://img.icons8.com/cute-clipart/28/cell-phone.png" alt="cell-phone"/> En Mobile:
 
-- CSS3
+![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/022ad5e0-fe36-4d5b-8842-a066a6494005)
 
-- TypeScript
+### <img width="28" height="28" src="https://img.icons8.com/officel/28/ipad-pro.png" alt="ipad-pro"/> En Tablet/Desktop:
 
-- React
+![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/2a332b9f-211f-4007-a8a5-60199b49acfe)
 
-- React-Icons
+---
+
+## <img width="26" height="26" src="https://img.icons8.com/fluency/26/monitor--v1.png" alt="monitor"/> Tecnologías
+
+- <img width="28" height="28" src="https://img.icons8.com/color/28/html-5--v1.png" alt="html5"/> HTML5
+
+- <img width="28" height="28" src="https://img.icons8.com/color/28/css3.png" alt="css3"/> CSS3
+
+- <img width="28" height="28" src="https://img.icons8.com/color/28/typescript.png" alt="typescript"/> TypeScript
+
+- <img width="28" height="28" src="https://img.icons8.com/office/28/react.png" alt="react"/> React y React-Icons
+
+- <img width="28" height="28" src="https://img.icons8.com/color/28/vite.png" alt="vite"/> Vite
+
+- <img width="28" height="28" src="https://img.icons8.com/color/28/npm.png" alt="npm"/> npm
 
 ---
 
