@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC, useState, FormEvent,  ChangeEvent } from 'react'
 
 import { AiOutlinePlusCircle } from 'react-icons/ai'
 
@@ -8,16 +8,19 @@ interface TaskFormProps {
   onAddTask: (taskTitle: string) => void
 }
 
+const initialTitleValue = ''
+
 const TaskForm: FC<TaskFormProps> = ({ onAddTask }) => {
 
-  const [title, setTitle] = useState<string>('')
+  const [title, setTitle] = useState<string>(initialTitleValue)
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     onAddTask(title)
+    setTitle(initialTitleValue)
   }
 
-  const onChangeTitle = (event) =>  setTitle(event.target.value)
+  const onChangeTitle = (event: ChangeEvent<HTMLInputElement>) =>  setTitle(event.target.value)
   
   return (
     <form

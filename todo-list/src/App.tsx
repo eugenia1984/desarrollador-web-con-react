@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Header from './components/header/Header'
 import TaskList from './components/task-list/TaskList'
 
-import { ITask } from './interfaces/ITask'
+import { ID, ITask } from './interfaces/ITask'
 
 function App() {
 
@@ -20,10 +20,31 @@ function App() {
     ])
   }
 
+  const toggleTaskCompletedById = (taskId: ID): void => {
+    const newTasks = tasks.map(task => {
+
+      if (task.id === taskId) {
+        return {
+          ...task,
+          isCompleted: !task.isCompleted
+        }
+      }
+
+      return task
+    })
+
+    setTasks(newTasks)
+  }
+
   return (
     <>
-      <Header onAddTask={ addTask } />
-      <TaskList tasks={ tasks } />
+      <Header
+        onAddTask={ addTask }
+      />
+      <TaskList
+        tasks={ tasks }
+        onCompleted={ toggleTaskCompletedById }
+      />
     </>
   )
 }

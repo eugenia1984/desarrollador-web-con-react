@@ -2,30 +2,38 @@ import { FC } from 'react'
 
 import TaskItem from '../task-item/TaskItem'
 
-import { ITask } from '../../interfaces/ITask'
+import { ID, ITask } from '../../interfaces/ITask'
 
 import styles from './TaskList.module.css'
 interface TaskListProps {
   tasks: ITask[]
+  onCompleted: (taskId: ID) => void
 }
 
-const TaskList: FC<TaskListProps> = ({ tasks }) => {
+const TaskList: FC<TaskListProps> = ({ tasks, onCompleted }) => {
+  const taskQuantity = tasks.length
+  const completedTask = tasks.filter(task => task.isCompleted).length
+
   return (
     <section className={ styles.tasks }>
       <section className={ styles.header }>
         <div>
           <p>Created tasks</p>
-          <span>10</span>
+          <span>{ taskQuantity }</span>
         </div>
         <div>
           <p className={ styles.textGreen }>Completed</p>
-          <span>1 of 10</span>
+          <span>{ completedTask } of { taskQuantity }</span>
         </div>
       </section>
       <div className={ styles.list }>
         {
           tasks.map((task) => (
-            <TaskItem key={ task.id } task={ task } />
+            <TaskItem
+              key={ task.id }
+              task={ task }
+              onCompleted={ onCompleted }
+            />
           ))
         }
 
