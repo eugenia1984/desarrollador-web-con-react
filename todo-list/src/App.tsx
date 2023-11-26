@@ -1,16 +1,35 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import Header from './components/header/Header'
 import TaskList from './components/task-list/TaskList'
+import Footer from './components/footer/Footer'
 
-import { ID, ITask } from './interfaces/ITask'
+import { ITask } from './interfaces/ITask'
+import { LOCAL_STORAGE_KEY } from './utils/constants'
 
 function App() {
 
   const [tasks, setTasks] = useState<ITask[]>([])
 
-  const addTask = (taskTitle: ITask["title"]) => {
-    setTasks([
+  const loadSavedTasks = (): void => {
+    const saved = localStorage.getItem(LOCAL_STORAGE_KEY)
+
+    if (saved) {
+      setTasks(JSON.parse(saved))
+    }
+  }
+
+  useEffect(() => {
+    loadSavedTasks()
+  }, [])
+
+  const setTasksAndSave = (newTasks: ITask[]): void => {
+    setTasks(newTasks)
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newTasks))
+  }
+
+  const addTask = (taskTitle: ITask["title"]): void => {
+    setTasksAndSave([
       ...tasks,
       {
         id: crypto.randomUUID(),
@@ -22,7 +41,7 @@ function App() {
 
   const deleteTaskById = (taskId: ITask["id"]): void => {
     const newTask = tasks.filter(task => task.id !== taskId)
-    setTasks(newTask)
+    setTasksAndSave(newTask)
   }
 
   const toggleTaskCompletedById = (taskId: ITask["id"]): void => {
@@ -38,7 +57,7 @@ function App() {
       return task
     })
 
-    setTasks(newTasks)
+    setTasksAndSave(newTasks)
   }
 
   return (
@@ -51,6 +70,7 @@ function App() {
         onDeleted={ deleteTaskById }
         onCompleted={ toggleTaskCompletedById }
       />
+      <Footer/>
     </>
   )
 }

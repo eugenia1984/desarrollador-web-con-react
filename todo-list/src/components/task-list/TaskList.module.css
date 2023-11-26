@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 736px;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 1.75rem;
   padding: 0 1rem;
 }
 
@@ -11,6 +11,14 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
+  gap: 1rem;
+}
+
+@media all and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .header > div {
@@ -20,7 +28,7 @@
 }
 
 .header p {
-  color: var( --secondary);
+  color: var(--secondary);
   font-size: 14px;
   font-weight: 700;
 }

@@ -33,7 +33,9 @@ const TaskForm: FC<TaskFormProps> = ({ onAddTask }) => {
         value={ title }
         onChange={ onChangeTitle}
       />
-      <button aria-label='Create task button'>
+      <button
+        aria-label='Create task button'
+      >
         Create  <AiOutlinePlusCircle size={ 20 } />
       </button>
     </form>

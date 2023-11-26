@@ -1,0 +1,20 @@
+.footer {
+  background: var(--bg-darker);
+  color: var(--white);
+  text-align: center;
+  padding: 1.75rem 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: var(--secondary);
+}

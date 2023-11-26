@@ -18,7 +18,7 @@ const Header: FC<HeaderProps> = ({ onAddTask }) => {
           className={ styles.logo }
           width="30"
           alt="To do list"
-        /> To-Do List
+        /> <span className={ styles['text-green'] }>To-Do</span> <span className={ styles['text-yellow']}>List</span>
       </h1>
       <TaskForm onAddTask={ onAddTask } />
     </header>
