@@ -70,6 +70,8 @@ persistan incluso después de recargar la página.
 
 ![image](https://github.com/eugenia1984/desarrollador-web-con-react/assets/72580574/2a332b9f-211f-4007-a8a5-60199b49acfe)
 
+[Link del deploy](https://to-do-list-mec.netlify.app/)
+
 ---
 
 ## <img width="26" height="26" src="https://img.icons8.com/fluency/26/monitor--v1.png" alt="monitor"/> Tecnologías
