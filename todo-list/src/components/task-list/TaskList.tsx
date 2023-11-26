@@ -2,15 +2,21 @@ import { FC } from 'react'
 
 import TaskItem from '../task-item/TaskItem'
 
-import { ID, ITask } from '../../interfaces/ITask'
+import {  ITask } from '../../interfaces/ITask'
 
 import styles from './TaskList.module.css'
 interface TaskListProps {
   tasks: ITask[]
-  onCompleted: (taskId: ID) => void
+  onDeleted: (taskId: ITask["id"]) => void
+  onCompleted: (taskId: ITask["id"]) => void
 }
 
-const TaskList: FC<TaskListProps> = ({ tasks, onCompleted }) => {
+const TaskList: FC<TaskListProps> = ({
+  tasks,
+  onDeleted,
+  onCompleted
+}) => {
+
   const taskQuantity = tasks.length
   const completedTask = tasks.filter(task => task.isCompleted).length
 
@@ -33,6 +39,7 @@ const TaskList: FC<TaskListProps> = ({ tasks, onCompleted }) => {
               key={ task.id }
               task={ task }
               onCompleted={ onCompleted }
+              onDeleted={ onDeleted}
             />
           ))
         }
